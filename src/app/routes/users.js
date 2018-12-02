@@ -9,6 +9,8 @@ router.get('/home/dashboard', usersController.dashboard);
 router.get('/signup', usersController.signup);
 router.post('/signup', usersController.signup);
 router.get('/logout', usersController.logout);
+
+
 router.get('/ir', usersController.ir);
 router.get('/irUsuarios', usersController.irUsuarios);
 router.post('/users/Agregar', usersController.Agregar);

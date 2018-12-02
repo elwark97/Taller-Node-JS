@@ -8,7 +8,7 @@ const newsRoutes= require('../app/routes/news');
 const app = express();
 const session = require('express-session');
 const userRoutes = require('../app/routes/users');
-
+const productosRoutes = require('../app/routes/productos');
 
 
 
@@ -34,5 +34,5 @@ app.use(session({
 
 app.use('/', userRoutes);
 app.use('/', newsRoutes);
-
+app.use('/', productosRoutes);
 module.exports = app;

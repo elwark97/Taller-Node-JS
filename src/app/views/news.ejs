@@ -4,8 +4,8 @@
     <table class="table table-striped table-bordered">
     <tr>
     <th>ID</th>
-    <th>Titulo</th>
-    <th>Noticias</th>
+    <th>Producto</th>
+    <th>Cantidad</th>
     <th>Acción</th>
     </tr>
     <% for (var i = 0; i < news.length; i ++) { %>
@@ -26,14 +26,14 @@
     </div>
     <div class="col-md-6 mt-4 card">
     <form class="card-body" action="/news/add" method="post">
-    <h3 class="card-title">Agregar Noticias</h3>
+    <h3 class="card-title">Agregar Productos</h3>
     <div class="form-group">
     <input name="title" type="text" class="form-control"
-    placeholder="Nuevo Título">
+    placeholder="Nuevo Producto">
     </div>
     <div class="form-group">
     <input name="news" type="text" class="form-control"
-    placeholder="Nuevo Contenido">
+    placeholder="Cantidad">
     </div>
     <input type="submit" class="btn btn-primary">
     </form>
